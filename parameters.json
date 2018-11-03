@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westus"
+        },
+        "networkInterfaceName": {
+            "value": "coreosvm749"
+        },
+        "networkSecurityGroupName": {
+            "value": "CoreOSVM-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "virtualNetworkName": {
+            "value": "CoreOSGroup-vnet"
+        },
+        "addressPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "CoreOSVM-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "CoreOSVM"
+        },
+        "virtualMachineRG": {
+            "value": "CoreOSGroup"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "azureops"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8iJO1hPXoFYQy874AymihLULfGZmLthldTK53lNDqEjvr6VTOoOy0DrjJZsKbTjkelmVW6lcMS9DiEcf0vBu5VvE1OAMikVWu4sLGtptWez+kF+gQ3JPGMWv6C3sN6ufuikcVhT5KqFk1JkXD3MHP9iaskgUpds/2Oge/S1al8XcGBmwxeQ5KJKEEsgkI4pcitgWfki2rXV3J6vhTSgK5tNl35SCW2GdIWn8gARanBPL7Jsih9jmXs2kKEJ3eHAAPZE7HMKUrp6sccbw/p9NPFgmkvtq5gxENV2NobHaDaZJK/iHL/wB0GV3D6Fbv5f/IyXhWoJGsFXj8cM38L4tz"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "oreroupdiag134"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/oreroupdiag134"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
+        }
+    }
+}
